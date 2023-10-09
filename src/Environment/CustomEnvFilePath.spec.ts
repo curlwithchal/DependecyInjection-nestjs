@@ -24,5 +24,6 @@ describe('Custom Environment Env File Path', () => {
     expect(configService.get('BAR')).toEqual('BAR');
     expect(configService.get('BAR')).not.toBe('FOOBAR');
     expect(configService.get('BAR')).not.toEqual('FOOBAR');
+    expect(serviceConfiguration).toBeDefined();
   });
 });

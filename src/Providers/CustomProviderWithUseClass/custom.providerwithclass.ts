@@ -1,11 +1,7 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
-interface InterfaceConfiguration {
-
-}
+interface InterfaceConfiguration {}
 @Injectable()
 export default abstract class ConfigService {
-
-  private readonly configuration: InterfaceConfiguration
+  private readonly configuration: InterfaceConfiguration;
 }
-

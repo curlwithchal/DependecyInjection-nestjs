@@ -1,7 +1,7 @@
 import { Test } from '@nestjs/testing';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import ServiceConfigurationEnvironment from './ServiceConfigurationEnvironment';
-import * as process from "process";
+import * as process from 'process';
 
 describe('Load Environment', () => {
   let serviceConfiguration: ServiceConfigurationEnvironment;

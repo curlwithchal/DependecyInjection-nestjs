@@ -1,12 +1,10 @@
-import {Inject, Injectable} from "@nestjs/common";
+import { Inject, Injectable } from '@nestjs/common';
 
-
-export default class ProviderWithToken{
-
-}
+class ProviderWithToken {}
 
 @Injectable()
 export default class CustomProviderWithToken {
-    constructor(@Inject('CUSTOMTOKEN') private customProviderWithToken: ProviderWithToken) {
-    }
+  constructor(
+    @Inject('CUSTOMTOKEN') private customProviderWithToken: ProviderWithToken,
+  ) {}
 }

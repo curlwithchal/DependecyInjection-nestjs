@@ -1,2 +1,1 @@
-
-export default class ProductionDevelopmentConfigService  {}
+export default class ProductionDevelopmentConfigService {}

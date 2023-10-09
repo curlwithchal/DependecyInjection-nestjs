@@ -1,5 +1,5 @@
 import { Test } from '@nestjs/testing';
-import { ConfigModule} from '@nestjs/config';
+import { ConfigModule } from '@nestjs/config';
 import ServiceConfigurationEnvironment from './ServiceConfigurationEnvironment';
 import Configuration from './Configuration/Configuration';
 

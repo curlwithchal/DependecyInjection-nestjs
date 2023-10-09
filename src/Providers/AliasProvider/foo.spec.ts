@@ -1,6 +1,5 @@
 import { Test } from '@nestjs/testing';
 import Foo from './foo';
-import {tests} from "tsconfig-paths/lib/__tests__/data/match-path-data";
 
 describe('Alias Provider', () => {
   let foo: Foo;
@@ -16,12 +15,11 @@ describe('Alias Provider', () => {
       providers: [Foo, configAliasLoggerFoo],
     }).compile();
 
-      foo= moduleRef.get<Foo>(Foo);
-      fooAlias = moduleRef.get('AliasLoggerFoo');
+    foo = moduleRef.get<Foo>(Foo);
+    fooAlias = moduleRef.get('AliasLoggerFoo');
   });
 
   test('test Alias Provider', () => {
-
     expect(fooAlias).toBeDefined();
     expect(foo).toEqual(fooAlias);
   });
